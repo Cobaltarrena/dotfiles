@@ -104,3 +104,4 @@ PATH=$PATH:/home/chaldea/.local/bin
 
 export DISPLAY=$(awk '/nameserver / {print $2; exit}' /etc/resolv.conf 2>/dev/null):0
 export LIBGL_ALWAYS_INDIRECT=1
+eval $(dircolors -p | sed -e 's/DIR 01;34/DIR 01;36/' | dircolors /dev/stdin)
